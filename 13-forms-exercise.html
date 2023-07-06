@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- this section contains meta-information -->
+    <title>Some random questions</title>
+    </head>
+    <body>
+        <form   method="POST"
+                action="https://api.dev-master.ninja/html/form">
+        <input type="hidden" name="id" value="this is a hidden ID">
+        <fieldset>
+            <legend>Course information:</legend>
+                Code: <input type="text" name="code" value=""><br>
+                    Do you like HTML?
+                <select name="YouLikeHtml">
+                    <option disabled selected>-- Choose one --</option>
+                    <option value="Y">Yes</option>
+                    <option value="N">No</option>
+                </select>
+                    <br>
+
+                What is your native language?
+                <select name="YourLanguage">
+                    <option disabled selected>-- Choose one --</option>
+                    <optgroup label="Francais">
+                        <option value="fr-BE">Belgique</option>
+                        <option value="fr-FR">France</option>
+                    </optgroup>
+                    <optgroup label="Nederlands">
+                        <option value="nl-BE">Belgie</options>
+                        <option value="nl-NL">Nederland</option>
+                    </optgroup>
+                    <option value="en-EN">English</option>
+                </select>
+        </fieldset>  
+        
+                <br>
+                Your comment: <br>
+                <textarea name="YourComments" rows="5" cols="60"></textarea>
+                <br><br>
+                Your score:<br>
+                <input type="radio" name="score" value="10">10
+                <input type="radio" name="score" value="20">20
+                <input type="radio" name="score" value="30">30
+                <input type="radio" name="score" value="40">40
+                <input type="radio" name="score" value="50">50
+                <input type="radio" name="score" value="50">50
+                <input type="radio" name="score" value="60">60
+                <input type="radio" name="score" value="70">70
+                <input type="radio" name="score" value="80">80
+                <input type="radio" name="score" value="90">90
+                <input type="radio" name="score" value="100">100
+
+                <br><br>
+                What browser are you using?<br>
+                <input list="browsers" name="UsedBrowser">
+                    <datalist id="browsers">
+                        <option value="Internet Explorer"></option>
+                        <option value="Firefox"></option>
+                        <option value="Chrome"></option>
+                        <option value="OperaGX"></option>
+                        <option value="Safari"></option>
+                    </datalist>
+            <br><br>
+            What is your favourite food?<br>
+                <input type="text" name="FavouriteFood" value="">
+
+        <br><br>
+        How old are you?<br>
+            <input  type="text"
+                    name="age"
+                    min="1" max="100" value=""><br><br>
+
+        Oh look, a slider!<br>
+            <input  type="range"
+                    name="rating"
+                    min="1" max="10" value=""><br>
+                        
+            <input type="submit" name="thebutton" value="Save!">
+        </form>
+
+    </body>
+</html>
