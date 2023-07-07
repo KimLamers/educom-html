@@ -5,6 +5,7 @@
     <title>Some random questions</title>
     </head>
     <body>
+        <div>
         <form   method="POST"
                 action="https://api.dev-master.ninja/html/form">
         <input type="hidden" name="id" value="this is a hidden ID">
@@ -16,8 +17,7 @@
                     <option disabled selected>-- Choose one --</option>
                     <option value="Y">Yes</option>
                     <option value="N">No</option>
-                </select>
-                    <br>
+                </select><br>
 
                 What is your native language?
                 <select name="YourLanguage">
@@ -32,10 +32,11 @@
                     </optgroup>
                     <option value="en-EN">English</option>
                 </select>
-        </fieldset>  
-        
-                <br>
-                Your comment: <br>
+        </fieldset> 
+        </div>
+        <br>
+        <div>
+                Your comment:<br>
                 <textarea name="YourComments" rows="5" cols="60"></textarea>
                 <br><br>
                 Your score:<br>
@@ -50,8 +51,9 @@
                 <input type="radio" name="score" value="80">80
                 <input type="radio" name="score" value="90">90
                 <input type="radio" name="score" value="100">100
-
                 <br><br>
+        </div>
+        <div>
                 What browser are you using?<br>
                 <input list="browsers" name="UsedBrowser">
                     <datalist id="browsers">
@@ -61,23 +63,25 @@
                         <option value="OperaGX"></option>
                         <option value="Safari"></option>
                     </datalist>
-            <br><br>
-            What is your favourite food?<br>
+                <br><br>
+                What is your favourite food?<br>
                 <input type="text" name="FavouriteFood" value="">
-
-        <br><br>
-        How old are you?<br>
-            <input  type="text"
+                <br><br>
+        </div>
+        <div>
+                How old are you?<br>
+                <input  type="text"
                     name="age"
                     min="1" max="100" value=""><br><br>
-
-        Oh look, a slider!<br>
-            <input  type="range"
+        </div>
+        <div>
+                Oh look, a slider!<br>
+                <input  type="range"
                     name="rating"
                     min="1" max="10" value=""><br>
                         
-            <input type="submit" name="thebutton" value="Save!">
+                <input type="submit" name="thebutton" value="Save!">
+        </div>
         </form>
-
     </body>
 </html>
